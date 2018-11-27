@@ -7,13 +7,44 @@ This version should be run on a Node Server with Express installed, with develop
 A client version or module may be added at a later date.
 
 ## Table of Contents
-(Background Information & General Questions)[#background-information--general-questions]
-* (What is OpenDBWS?)[#what-is-opendbws]
-* (What is SOAP?)[#what-is-soap]
-* (Why was this made?)[#why-was-this-made]
-* (What is your relationship with OpenDBWS?)[#what-is-your-relationship-with-opendbws]
-* (Why was X written in such a way...)[#why-is-x-written-in-such-a-way--ys-coding-format-is-not-to-my-liking-etc]
-(Getting Started)[#getting-started]
+[Background Information & General Questions](#background-information--general-questions)
+* [What is OpenDBWS?](#what-is-opendbws)
+* [What is SOAP?](#what-is-soap)
+* [Why was this made?](#why-was-this-made)
+* [What is your relationship with OpenDBWS?](#what-is-your-relationship-with-opendbws)
+* [Why was X written in such a way...](#why-is-x-written-in-such-a-way--ys-coding-format-is-not-to-my-liking-etc)
+[Getting Started](#getting-started)
+* [Prerequisites](#prerequisites)
+* [Setup](#setup)
+[Queries](Queries)
+* [GetDepartureBoard](#getdepartureboard)
+* [GetDepBoardWithDetails](#getdepboardwithdetails)
+* [GetArrivalBoard](#getarrivalboard)
+* [GetArrBoardWithDetails](#getarrboardwithdetails)
+* [GetArrivalDepartureBoard](#getarrivaldepartureboard)
+* [GetArrDepBoardWithDetails](#getarrdepboardwithdetails)
+* [GetNextDepartures](#getnextdepartures)
+* [GetNextDeparturesWithDetails](#getnextdepartureswithdetails)
+* [GetFastestDepartures](#getfastestdepartures)
+* [GetFastestDeparturesWithDetails](#getfastestdepartureswithdetails)
+* [GetServiceDetails](#getservicedetails)
+[JSON Data Type Format](#json-data-type-format)
+* [StationBoard](#stationboard)
+* [StationBoardWithDetails](#stationboardwithdetails)
+* [DeparturesBoard](#departuresboard)
+* [DeparturesBoardWithDetails](#departuresboardwithdetails)
+* [ServiceItem](#serviceitem)
+* [ServiceItemWithCallingPoints](#serviceitemwithcallingpoints)
+* [DepartureItem](#departureitem)
+* [DepartureItemWithCallingPoints](#departureitemwithcallingpoints)
+* [ServiceLocation](#servicelocation)
+* [ServiceDetails](#servicedetails)
+* [CallingPoint](#callingpoint)
+* [Error](#error)
+[Contributing](#contributing)
+[Authors](#authors)
+[Licence](#licence)
+
 
 ## Background Information & General Questions
 
@@ -741,7 +772,7 @@ subsequentCallingPoints - A list of CallingPoint objects relative to this locati
 
 formation - FormationData (RAW) for this ServiceItemWithCallingPoints, if any.
 
-###DepartureItem
+### DepartureItem
 
 crs - The CRS code of the location that the Departure Item represents.  
                         
@@ -753,7 +784,7 @@ crs - The CRS code of the location that the Departure Item represents.
                          
 service - A list of ServiceItemWithCallingPoints objects for the CRS code.
 
-###ServiceLocation
+### ServiceLocation
 
 locationName - The name of the location.
 
@@ -765,7 +796,7 @@ futureChangeTo - A text string containing service type (Bus/Ferry/Train) to whic
 
 assocIsCancelled - This origin or destination can no longer be reached because the association has been cancelled. 
 
-###Service Details
+### Service Details
 
 generatedAt - The time at which the service details were generated.
 
@@ -815,7 +846,7 @@ previousCallingPoints - A list of lists of CallingPoint objects representing the
 
 subsequentCallingPoints - A list of lists of CallingPoint objects representing the subsequent calling points in the journey. A separate calling point list will be present for each destination of the service, relative to the current location. 
 
-###CallingPoint
+### CallingPoint
 
 locationName - The display name of this location.
 
@@ -835,7 +866,7 @@ detachFront - True if the service detaches units from the front at this location
 
 adhocAlerts - A list of active Adhoc Alert texts for to this location. This list contains an object called AdhocAlertTextType which contains a string to show the Adhoc Alert Text for the locaiton. 
 
-###Error
+### Error
 
 status - Should be false in this case
 
@@ -851,8 +882,8 @@ This may be added at a later time
 
 ## License
 
-This project is licensed under the MIT Licence - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT Licence - see the [LICENCE.md](LICENCE.md) file for details
 
-However, your usage of OpenDBWS data is subject to NRE OGL Licences - see <http://www.nationalrail.co.uk/100296.aspx> for specific details.
+However, your usage of OpenDBWS data may be subject to NRE OGL Licences - see <http://www.nationalrail.co.uk/100296.aspx> for specific details.
 
 
