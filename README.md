@@ -13,9 +13,11 @@ A client version or module may be added at a later date.
 * [Why was this made?](#why-was-this-made)
 * [What is your relationship with OpenDBWS?](#what-is-your-relationship-with-opendbws)
 * [Why was X written in such a way...](#why-is-x-written-in-such-a-way--ys-coding-format-is-not-to-my-liking-etc)
+
 [Getting Started](#getting-started)
 * [Prerequisites](#prerequisites)
 * [Setup](#setup)
+
 [Queries](Queries)
 * [GetDepartureBoard](#getdepartureboard)
 * [GetDepBoardWithDetails](#getdepboardwithdetails)
@@ -28,6 +30,7 @@ A client version or module may be added at a later date.
 * [GetFastestDepartures](#getfastestdepartures)
 * [GetFastestDeparturesWithDetails](#getfastestdepartureswithdetails)
 * [GetServiceDetails](#getservicedetails)
+
 [JSON Data Type Format](#json-data-type-format)
 * [StationBoard](#stationboard)
 * [StationBoardWithDetails](#stationboardwithdetails)
@@ -41,8 +44,11 @@ A client version or module may be added at a later date.
 * [ServiceDetails](#servicedetails)
 * [CallingPoint](#callingpoint)
 * [Error](#error)
+
 [Contributing](#contributing)
+
 [Authors](#authors)
+
 [Licence](#licence)
 
 
