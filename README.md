@@ -6,6 +6,15 @@ This version should be run on a Node Server with Express installed, with develop
 
 A client version or module may be added at a later date.
 
+## Table of Contents
+(Background Information & General Questions)[#background-information--general-questions]
+* (What is OpenDBWS?)[#what-is-opendbws]
+* (What is SOAP?)[#what-is-soap]
+* (Why was this made?)[#why-was-this-made]
+* (What is your relationship with OpenDBWS?)[#what-is-your-relationship-with-opendbws]
+* (Why was X written in such a way...)[#why-is-x-written-in-such-a-way--ys-coding-format-is-not-to-my-liking-etc]
+(Getting Started)[#getting-started]
+
 ## Background Information & General Questions
 
 ### What is OpenDBWS?
