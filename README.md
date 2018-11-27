@@ -784,7 +784,7 @@ crs - The CRS code of the location that the Departure Item represents.
                         
 service - A list of ServiceItem objects for the CRS code.
 
-###DepartureItemWithCallingPoints
+### DepartureItemWithCallingPoints
 
 crs - The CRS code of the location that the Departure Item represents. 
                          
@@ -886,7 +886,7 @@ This may be added at a later time
 
 * **Anthony Cheng** - *Initial work* - <https://github.com/anthonyhlcheng>
 
-## License
+## Licence
 
 This project is licensed under the MIT Licence - see the [LICENCE.md](LICENCE.md) file for details
 
