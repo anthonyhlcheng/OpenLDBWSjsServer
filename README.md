@@ -1,6 +1,6 @@
-# OpenDBWSjsServer
+# OpenLDBWSjsServer
 
-This project acts as an bridge between the XML output of OpenDBWS SOAP requests and developers who wishes to work with JSON output only. So no need to fiddle with XML.
+This project acts as an bridge between the XML output of OpenLDBWS SOAP requests and developers who wishes to work with JSON output only. So no need to fiddle with XML.
 
 This version should be run on a Node Server with Express installed, with developers fetching information via HTTP GET requests to the server.
 
@@ -8,10 +8,10 @@ A client version or module may be added at a later date.
 
 ## Table of Contents
 [Background Information & General Questions](#background-information--general-questions)
-* [What is OpenDBWS?](#what-is-opendbws)
+* [What is OpenLDBWS?](#what-is-openldbws)
 * [What is SOAP?](#what-is-soap)
 * [Why was this made?](#why-was-this-made)
-* [What is your relationship with OpenDBWS?](#what-is-your-relationship-with-opendbws)
+* [What is your relationship with OpenLDBWS?](#what-is-your-relationship-with-openldbws)
 * [Why was X written in such a way...](#why-is-x-written-in-such-a-way--ys-coding-format-is-not-to-my-liking-etc)
 
 [Getting Started](#getting-started)
@@ -54,9 +54,9 @@ A client version or module may be added at a later date.
 
 ## Background Information & General Questions
 
-### What is OpenDBWS?
+### What is OpenLDBWS?
 
-OpenDBWS is a request response web service to access real time train information in England, Scotland and Wales. It is the same service that powers the Live Departure Boards. All information is provided in XML format.
+OpenLDBWS is a request response web service to access real time train information in England, Scotland and Wales. It is the same service that powers the Live Departure Boards. All information is provided in XML format.
 
 For more information, go to <http://lite.realtime.nationalrail.co.uk/openldbws/>  
 
@@ -68,11 +68,11 @@ For more information, go to <https://www.w3schools.com/xml/xml_soap.asp>
 
 ### Why was this made?
 
-It's to provide developers, who don't want the hassle of manipulating XML or learning how to structure XML requests to send over to OpenDBWS, a way of accessing real live train information.
+It's to provide developers, who don't want the hassle of manipulating XML or learning how to structure XML requests to send over to OpenLDBWS, a way of accessing real live train information.
 
-### What is your relationship with OpenDBWS?
+### What is your relationship with OpenLDBWS?
 
-The author of this code is an independent individual, not employed by National Rail Enquiries or the Rail Delivery Group. The data provided is sourced from OpenDBWS. Any queries specifically related to the data produced should be directed to the authors of OpenDBWS.
+The author of this code is an independent individual, not employed by National Rail Enquiries or the Rail Delivery Group. The data provided is sourced from OpenLDBWS. Any queries specifically related to the data produced should be directed to the authors of OpenLDBWS.
 
 ### Why is X written in such a way | Y's coding format is not to my liking etc...
 
@@ -84,7 +84,7 @@ This section will get your server up and running.
 
 ### Prerequisites
 
-You must register for an OpenDBWS account. [Click here](http://realtime.nationalrail.co.uk/OpenLDBWSRegistration/) if you haven't got an account.
+You must register for an OpenLDBWS account. [Click here](http://realtime.nationalrail.co.uk/OpenLDBWSRegistration/) if you haven't got an account.
 
 Ensure you have node and npm installed. Initialise the directory and update your library to include the dependencies required.
 
@@ -101,9 +101,9 @@ OPENLDBWSTYP=http://thalesgroup.com/RTTI/2013-11-28/Token/types
 OPENLDBWSLDB=http://thalesgroup.com/RTTI/2017-10-01/ldb/
 ```
 
-Using the token that was supplied by OpenDBWS during registration, replace the undefined value of OPENLDBWSTOKEN with your private token.
+Using the token that was supplied by OpenLDBWS during registration, replace the undefined value of OPENLDBWSTOKEN with your private token.
 
-The other variables are what forms the XML query. Should OpenDBWS be updated to a newer version, then you will need to replace the values above.
+The other variables are what forms the XML query. Should OpenLDBWS be updated to a newer version, then you will need to replace the values above.
 
 More specifically:
 
@@ -876,7 +876,7 @@ adhocAlerts - A list of active Adhoc Alert texts for to this location. This list
 
 status - Should be false in this case
 
-error - A list of strings containing the errors that is causing a request to fail. There are times when OpenDBWS throws an error, so the XML is coughed out.
+error - A list of strings containing the errors that is causing a request to fail. There are times when OpenLDBWS throws an error, so the XML is coughed out.
 
 ## Contributing
 
@@ -890,6 +890,6 @@ This may be added at a later time
 
 This project is licensed under the MIT Licence - see the [LICENCE.md](LICENCE.md) file for details
 
-However, your usage of OpenDBWS data may be subject to NRE OGL Licences - see <http://www.nationalrail.co.uk/100296.aspx> for specific details.
+However, your usage of OpenLDBWS data may be subject to NRE OGL Licences - see <http://www.nationalrail.co.uk/100296.aspx> for specific details.
 
 
